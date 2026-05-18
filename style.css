@@ -1,3 +1,41 @@
 h1 {
-    color: blue
+    color: #333;
+}
+
+/* 문의 예약 폼 스타일 */
+.booking-form {
+    max-width: 300px; /* 폼 너비 조정 */
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* 줄바꿈 및 요소 간 간격 조절 */
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* 세로 기준 가운데 정렬 */
+}
+
+.form-group label {
+    width: 60px; /* 라벨의 고정 너비를 주어 우측 입력칸들의 열(시작점)을 맞춥니다 */
+    font-weight: bold;
+}
+
+.form-group input {
+    flex: 1; /* 남은 공간을 모두 차지하도록 설정 */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-form button {
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #555;
 }
